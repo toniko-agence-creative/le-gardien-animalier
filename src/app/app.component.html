@@ -1,4 +1,82 @@
-<div>
-  <img src="assets/logo.png" alt="Le Gardien Animalier" />
-  <p>Bient&ocirc;t disponible<br />Coming soon</p>
-</div>
+<header>
+  <nav id="quick-links">
+    <a href="#"><img src="/assets/facebook-logo.png" alt="Facebook" /></a>
+    <a href="#"><img src="/assets/ig-logo.png" alt="Instagram" /></a>
+    <a href="#" title="English">En</a>
+  </nav>
+  <nav id="main-nav">
+    <a href="#"><img src="/assets/logo.png" alt="Le gardien animalier" /></a>
+    <a href="#">Cours et formations</a>
+  </nav>
+  <section id="splash">
+    <div class="splash-content">
+      <img src="/assets/logo.png" alt="Le gardien animalier" />
+      <hr />
+      <h1>Lorem ipsum dolor sit amet consectetur adiposcing elit.</h1>
+    </div>
+  </section>
+</header>
+<section id="description">
+  <div class="description-content">
+    <h2>Test</h2>
+    <p>
+      Mauris accumsan ligula ante, sit amet maximus sem eleifend quis.
+      Sed nibh nisl, posuere vitae risus at, dictum hendrerit ipsum.
+      Praesent ac nibh ut tellus hendrerit semper. Nunc eget quam ac mi tempor vestibulum.
+      Nam faucibus aliquam feugiat.
+    </p>
+    <p>
+      Aliquam sed erat egestas, bibendum metus sit amet, rhoncus lacus.
+      Aliquam fringilla dolor ac posuere condimentum. Etiam eget ipsum ligula.
+    </p>
+  </div>
+</section>
+<section id="content">
+  <div id="content-box">
+    <section id="highlight">
+      <div id="highlight-image">
+        <div class="new">Nouveaut&eacute;</div>
+        <img src="/assets/highlight.png" alt="" />
+      </div>
+      <div id="highlight-details">
+        <p class="category">Formation en ligne</p>
+        <h3>La COVID-19 et les animaux</h3>
+        <p class="date">Mercredi, 20 septembre 2020</p>
+        <p class="description">D&eacute;couvrez-en plus sur les pratiques et les mesures de pr&eacute;vention de la COVID-19.</p>
+        <hr />
+        <ul class="included">
+          <li>Formation en ligne</li>
+          <li>+ lien</li>
+        </ul>
+        <p class="purchase"><a href="#">Acheter</a></p>
+      </div>
+    </section>
+
+    <section id="section-description">
+      <h2>Nos cours et nos formations</h2>
+      <p>Praesent libero enim, congue et felis in, rhoncus cursus orci. Morbi eget augue eget ligula semper luctus sed eget urna.</p>
+    </section>
+
+    <section id="filters">
+      <div class="filter">
+        <label for="category">Cat&eacute;gorie</label>
+        <select id="category">
+          <option value="0">Tout</option>
+          <option value="1">Formations en ligne</option>
+        </select>
+      </div>
+      <div class="filter">
+        <div class="calendar-filter">
+          <mat-date-range-input [rangePicker]="picker">
+            <input matStartDate placeholder="Date de d&eacute;but">
+            <input matEndDate placeholder="Date de fin" style="width:auto;">
+          </mat-date-range-input>
+          <mat-datepicker-toggle matSuffix [for]="picker">
+            <img src="/assets/calendar.png" matDatepickerToggleIcon />
+          </mat-datepicker-toggle>
+          <mat-date-range-picker #picker></mat-date-range-picker>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
