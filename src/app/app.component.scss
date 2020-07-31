@@ -92,12 +92,16 @@
 
 #description {
   background-color: #006580;
-  padding: 5% 15%;
+  padding: 5% 5%;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   color: White;
+}
+
+#description-content {
+  max-width: 1300px;
 }
 
 #description h2 {
@@ -121,7 +125,6 @@
 
 #content-box {
   max-width: 1200px;
-  min-width: 700px;
   margin: 0 auto;
   width: 90%;
   padding: 80px 0;
@@ -142,6 +145,7 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  display: block;
 }
 
 #highlight-image .new {
@@ -172,6 +176,19 @@
   background-color: white;
   border: 1px solid #979797;
   border-left: none;
+}
+
+@media only screen and (max-width: 700px) {
+  #highlight {
+    display: block;
+    width: calc(100% - 4px);
+    padding: 0 2px 6px 2px;
+  }
+
+  #highlight-details {
+    border: 0;
+    width: calc(100% - 60px);
+  }
 }
 
 .category {
@@ -260,6 +277,17 @@ hr {
   padding: 30px;
 }
 
+@media only screen and (max-width: 600px) {
+  #filters {
+    height: 224px;
+    display: block;
+    margin-top: 60px;
+  }
+  #filters .filter {
+    flex-wrap: nowrap;
+  }
+}
+
 #filters .filter label {
   display: block;
   text-transform: uppercase;
@@ -317,6 +345,12 @@ hr {
   width: calc(100% - 4px);
 }
 
+@media only screen and (max-width: 700px) {
+  #listing > ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media only screen and (min-width: 1000px) {
   #listing > ul {
     grid-template-columns: repeat(3, 1fr);
@@ -370,7 +404,7 @@ hr {
 
 #newsletter {
   background-color: #006580;
-  padding: 5% 15%;
+  padding: 5%;
   text-align: center;
   display: flex;
   align-items: center;
@@ -392,12 +426,20 @@ hr {
   border: 0;
   line-height: 40px;
   padding: 0 30px;
+  vertical-align: middle;
 }
 
 #newsletter input[type=text] {
   font-size: 0.875rem;
   min-width: 300px;
 }
+
+@media only screen and (max-width: 700px) {
+  #newsletter input[type=text] {
+    min-width: 120px;
+  }
+}
+
 
 #newsletter input[type=submit] {
   text-transform: uppercase;
